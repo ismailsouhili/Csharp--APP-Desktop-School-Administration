@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{126B7F69-5B53-46CB-AB67-4F0014968D1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prj_DeutschSprachInstitut</RootNamespace>
+    <AssemblyName>Prj_DeutschSprachInstitut</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CR-Admin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR-Admin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR-Kursen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR-Kursen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR-Schüler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR-Schüler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR-Teilnehmen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR-Teilnehmen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR-Trainer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR-Trainer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frm_Administration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Administration.Designer.cs">
+      <DependentUpon>Frm_Administration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Kursen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Kursen.Designer.cs">
+      <DependentUpon>Frm_Kursen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Progress.Designer.cs">
+      <DependentUpon>Frm_Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Student.Designer.cs">
+      <DependentUpon>Frm_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Teilnehmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Teilnehmer.Designer.cs">
+      <DependentUpon>Frm_Teilnehmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Trainer.Designer.cs">
+      <DependentUpon>Frm_Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeAdmin.Designer.cs">
+      <DependentUpon>ListeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeKursen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeKursen.Designer.cs">
+      <DependentUpon>ListeKursen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeStudenten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeStudenten.Designer.cs">
+      <DependentUpon>ListeStudenten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeTeilnehmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeTeilnehmen.Designer.cs">
+      <DependentUpon>ListeTeilnehmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeTrainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeTrainer.Designer.cs">
+      <DependentUpon>ListeTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchulverwaltungDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchulverwaltungDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchulverwaltungDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchulverwaltungDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchulverwaltungDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchulverwaltungDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CR-Admin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR-Admin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR-Kursen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR-Kursen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR-Schüler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR-Schüler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR-Teilnehmen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR-Teilnehmen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR-Trainer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR-Trainer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Administration.resx">
+      <DependentUpon>Frm_Administration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Kursen.resx">
+      <DependentUpon>Frm_Kursen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Progress.resx">
+      <DependentUpon>Frm_Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Student.resx">
+      <DependentUpon>Frm_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Teilnehmer.resx">
+      <DependentUpon>Frm_Teilnehmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Trainer.resx">
+      <DependentUpon>Frm_Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeAdmin.resx">
+      <DependentUpon>ListeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeKursen.resx">
+      <DependentUpon>ListeKursen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeStudenten.resx">
+      <DependentUpon>ListeStudenten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeTeilnehmen.resx">
+      <DependentUpon>ListeTeilnehmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeTrainer.resx">
+      <DependentUpon>ListeTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SchulverwaltungDataSet.xsc">
+      <DependentUpon>SchulverwaltungDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchulverwaltungDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchulverwaltungDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchulverwaltungDataSet.xss">
+      <DependentUpon>SchulverwaltungDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchulverwaltungDataSet1.xsc">
+      <DependentUpon>SchulverwaltungDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchulverwaltungDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchulverwaltungDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchulverwaltungDataSet1.xss">
+      <DependentUpon>SchulverwaltungDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchulverwaltungDataSet2.xsc">
+      <DependentUpon>SchulverwaltungDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchulverwaltungDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchulverwaltungDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchulverwaltungDataSet2.xss">
+      <DependentUpon>SchulverwaltungDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
